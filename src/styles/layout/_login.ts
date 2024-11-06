@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-
+import sunsetBackground from '../../assets/beach.jpg';
 
 export const Container = styled.div`
     width: 100%; 
@@ -9,26 +9,34 @@ export const Container = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(${sunsetBackground});
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 `
 
 export const LoginContainer = styled.div`
-    width: 100%;
-    max-width: 420px;
-    background-color: #FFFFFF;
+  width: 100%;
+  max-width: 500px;
+  height: 60vh;
 
-    border-radius: 8px;
-    padding: 20px;
+  border-radius: 8px;
+  padding: 20px;
 
-    flex:1;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 `
 
 export const Title = styled.h1`
     font-size: 42px;
     font-weight: 700;
-    color: #81259D;
+    font-family: cursive;
 `
 
 export const Row = styled.div`
@@ -36,7 +44,7 @@ export const Row = styled.div`
     display: flex;
     align-items: flex-start;
     justify-content: center;
-`
+    `
 
 export const Column = styled.div`
     width: 100%;
@@ -44,8 +52,7 @@ export const Column = styled.div`
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-`
+    `
 export const Spacing = styled.div`
     margin: 10px 0;
 `
-

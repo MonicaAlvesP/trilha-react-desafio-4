@@ -1,8 +1,6 @@
-import { ButtonContainer } from "./styles";
+import { ButtonContainer } from "../../styles/modules/_button";
 import { IButtonProps } from "./types";
 
-const Button = ({ title, onClick }: IButtonProps) => {
+export const Button = ({ title, onClick }: IButtonProps) => {
   return <ButtonContainer onClick={onClick}>{title}</ButtonContainer>;
 };
-
-export default Button;
