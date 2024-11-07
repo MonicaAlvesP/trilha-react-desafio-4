@@ -4,7 +4,6 @@ import styled from 'styled-components';
 export const InputContainer = styled.div`
     width: 100%;
     height: 42px;
-    color: #FFF;
 
     border-bottom: 1px solid #000000;
     overflow: hidden;
@@ -17,13 +16,17 @@ export const InputContainer = styled.div`
         background-color: transparent;
         border: 0;
         outline: none;
+        &::placeholder {
+            color: #000000;
+        }
     }
 
 `
 
 export const ErrorMessage = styled.p`
-    color: red;
-    font-size:12px;
+    color: #9F1C21;
+    font-size:15px;
+    font-weight: 700;
     margin-top:8px;
     margin-left:10px;
 `

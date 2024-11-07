@@ -1,50 +1,49 @@
-# React + TypeScript + Vite
+# Projeto de Login com React e Formulário Validado ✨
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é uma aplicação de login desenvolvida com React e TypeScript, utilizando React Hook Form para gerenciar o estado dos formulários e Yup para validação. O formulário de login permite que o usuário insira seu e-mail e senha, com um botão "Entrar" que fica desabilitado até que todos os campos sejam preenchidos corretamente.
 
-Currently, two official plugins are available:
+## ✨ Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Validação de Campos**: O formulário valida o e-mail e a senha conforme as regras definidas no esquema Yup.
+- **Controle de Botão Desabilitado**: O botão "Entrar" permanece desabilitado até que todos os campos estejam preenchidos corretamente.
+- **Tratamento de Erros**: Exibe mensagens de erro caso o usuário ou a senha sejam inválidos.
 
-## Expanding the ESLint configuration
+## 🚀 Tecnologias Ultilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **React**: Biblioteca JavaScript para construção de interfaces de usuário.
+- **React hook form**: Biblioteca para manipulação de formulários com validação.
+- **Yup**: Biblioteca para validação de esquemas de objetos JavaScript.
+- **Styled Components**: Biblioteca para estilizar componentes de forma modular e dinâmica.
 
-- Configure the top-level `parserOptions` property like this:
+## Instalação e Execução
+1. Clone o repositório:
+    ```bash
+    git clone https://github.com/MonicaAlvesP/trilha-react-desafio-4.git
+    ```
+2. Navegue até o diretório do projeto:
+      ```bash
+      cd trilha-react-desafio-4
+      ```
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+3. Instale as dependências:
+      ```bash
+      npm install
+      ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+4. Execute a aplicação:
+      ```bash
+      npm run dev
+      ```
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+    *A aplicação estará disponível em `http://localhost:3000`.*
+  
+## NOTA 
+*Após o login bem-sucedido, não haverá uma nova tela. Os dados do usuário serão exibidos no console do navegador indicando que está tudo certo e validado.*
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+<details align="left">
+  <sumary></sumary>
+    <p>O projeto foi criado como parte de um desafio proposto pela <b>Digital Innovation One</b>.</p>
+  <div align="right">
+    Feito com 💜 por <a href="https://github.com/MonicaAlvesP?tab=repositories">MA</a>
+  </div>
+</details>

@@ -12,7 +12,13 @@ export const ButtonContainer = styled.button`
 
   &:hover {
     color: #FFF;
-    background-color: #699A56;
+    background-color: #2E3F7F;
     cursor:pointer;
+  }
+
+  &:disabled {
+    background-color: #bdbdbd;
+    color: #757575;
+    cursor: not-allowed;
   }
 `

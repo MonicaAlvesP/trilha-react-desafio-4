@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import sunsetBackground from '../../assets/beach.jpg';
+import florestBackground from '../../assets/florest.jpg';
 
 export const Container = styled.div`
     width: 100%; 
@@ -9,7 +9,7 @@ export const Container = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(${sunsetBackground});
+    background-image: url(${florestBackground});
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -29,7 +29,6 @@ export const LoginContainer = styled.div`
   justify-content: center;
 
   backdrop-filter: blur(20px);
-  background-color: rgba(255, 255, 255, 0.1);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 `
 
